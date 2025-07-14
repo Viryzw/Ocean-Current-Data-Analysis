@@ -109,3 +109,10 @@ An example of the mapped available region's trajectory point set and trajectory 
 </div>
 
 This approach allows us to verify the robustness of subsequent algorithms across different regions while also demonstrating the practical feasibility of the method.
+
+
+
+(*) Other languages
+
+- zh_CN [简体中文](README_zh.md)
+
