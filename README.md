@@ -89,7 +89,9 @@ A zoomed-in view appears as follows:
 
 (3.3) Running `main.py` randomly selects an available area, completes coordinate mapping (for non-geographic systems like Cartesian coordinates), and saves the mapped trajectory points as a `*.csv` file for further experiments.
 
+(3.4) Running `modify.py` sets the starting point to the specified boundary and deletes all points before each starting point.
 
+(3.5) Run `employ.py` to draw a graph in the specified area to check whether the above work is completed correctly.
 
 ##### (4) Notes and Future Improvements
 

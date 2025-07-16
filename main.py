@@ -55,8 +55,8 @@ lat_min, lat_max = center_lat - region_half_size, center_lat + region_half_size
 
 # 线性映射函数
 def map_to_rect(lon_val, lat_val):
-    target_min = -1.0
-    target_max = 6.0
+    target_min = -1000
+    target_max = 10260
     scale = target_max - target_min
 
     x_mapped = target_min + scale * (lon_val - lon_min) / (lon_max - lon_min)
@@ -71,7 +71,7 @@ ax.set_xlabel('Longitude')
 ax.set_ylabel('Latitude')
 ax.set_title(f'Trajectories in region around ({center_lon:.3f}, {center_lat:.3f})')
 
-with open("region_trajectories_mapped_.csv", mode="w", newline="") as f:
+with open("region_trajectories_mapped.csv", mode="w", newline="") as f:
     writer = csv.writer(f)
     kept_trajectory_count = 0
 
